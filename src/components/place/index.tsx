@@ -23,7 +23,7 @@ export function Place({ data, ...rest}: Props) {
 
             <View style={st.content}>
                 <Text style={st.name}>{data.name}</Text>
-                <Text style={st.description}>{data.description}</Text>
+                <Text style={st.description} numberOfLines={2}>{data.description}</Text>
                 <View style={st.footer}>
                     <IconTicket size={16} color={colors.red.base} />
                     <Text style={st.tickets}>{data.cupons} cupons disponíveis</Text>
